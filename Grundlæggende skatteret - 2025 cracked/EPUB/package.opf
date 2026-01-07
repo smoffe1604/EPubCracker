@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" prefix="nordic: http://www.mtm.se/epub/" unique-identifier="pub-identifier" xml:lang="da" version="3.0">
+    <metadata>
+        <dc:title id="title">Grundlæggende skatteret 2025</dc:title>
+        <dc:language>da</dc:language>
+        <dc:identifier id="pub-identifier">dk-nota-665637</dc:identifier>
+        <dc:source>978-87-619-4563-1</dc:source>
+        <dc:creator>John Bygholm</dc:creator>
+        <dc:format>application/epub+zip</dc:format>
+        <dc:publisher>NOTA</dc:publisher>
+        <dc:date>2025-02-20</dc:date>
+        <meta property="dcterms:modified">2025-02-20T06:36:00Z</meta>
+        <meta property="nordic:supplier">AEL Data</meta>
+        <meta property="nordic:guidelines">2020-1</meta>
+        <meta name="cover" content="cover-image" />
+        <meta property="schema:accessibilitySummary">Denne publikation er i overensstemmelse med de Nordiske Retningslinjer for Produktion af Tilgængelighed i Epub 3, version 2020-1.</meta>
+        <meta property="schema:accessMode">textual</meta>
+        <meta property="schema:accessMode">visual</meta>
+        <meta property="schema:accessModeSufficient">textual,visual</meta>
+        <meta property="schema:accessModeSufficient">textual</meta>
+        <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+        <meta property="schema:accessibilityFeature">alternativeText</meta>
+        <meta property="schema:accessibilityHazard">none</meta>
+        <meta property="a11y:certifiedBy">NOTA</meta>
+        <link rel="dcterms:conformsTo" href="https://format.mtm.se/nordic_epub/2020-1" />
+    <meta property="stamp">22575470</meta><meta name="stamp" content="22575470" /></metadata>
+    <manifest>
+        <item id="css_1" media-type="text/css" href="css/nota_stylesheet_2024.css" />
+        <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav" />
+        <item id="cover-image" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image" />
+        <item id="item_144" href="images/665637-001.jpg" media-type="image/jpeg" />
+        <item id="item_145" href="images/665637-002.jpg" media-type="image/jpeg" />
+        <item id="item_146" href="images/665637-003.jpg" media-type="image/jpeg" />
+        <item id="item_147" href="images/665637-004.jpg" media-type="image/jpeg" />
+        <item id="item_148" href="images/665637-005.jpg" media-type="image/jpeg" />
+        <item id="item_149" href="images/665637-006.jpg" media-type="image/jpeg" />
+        <item id="import_1" media-type="application/xhtml+xml" href="dk-nota-665637-001-cover.xhtml" />
+        <item id="import_2" media-type="application/xhtml+xml" href="dk-nota-665637-002-titlepage.xhtml" />
+        <item id="import_3" media-type="application/xhtml+xml" href="dk-nota-665637-003-colophon.xhtml" />
+        <item id="import_4" media-type="application/xhtml+xml" href="dk-nota-665637-004-preface.xhtml" />
+        <item id="import_5" media-type="application/xhtml+xml" href="dk-nota-665637-005-toc.xhtml" />
+        <item id="import_6" media-type="application/xhtml+xml" href="dk-nota-665637-006-frontmatter.xhtml" />
+        <item id="import_7" media-type="application/xhtml+xml" href="dk-nota-665637-007-part.xhtml" />
+        <item id="import_8" media-type="application/xhtml+xml" href="dk-nota-665637-008-chapter.xhtml" />
+        <item id="import_9" media-type="application/xhtml+xml" href="dk-nota-665637-009-chapter.xhtml" />
+        <item id="import_10" media-type="application/xhtml+xml" href="dk-nota-665637-010-chapter.xhtml" />
+        <item id="import_11" media-type="application/xhtml+xml" href="dk-nota-665637-011-chapter.xhtml" />
+        <item id="import_12" media-type="application/xhtml+xml" href="dk-nota-665637-012-part.xhtml" />
+        <item id="import_13" media-type="application/xhtml+xml" href="dk-nota-665637-013-chapter.xhtml" />
+        <item id="import_14" media-type="application/xhtml+xml" href="dk-nota-665637-014-chapter.xhtml" />
+        <item id="import_15" media-type="application/xhtml+xml" href="dk-nota-665637-015-part.xhtml" />
+        <item id="import_16" media-type="application/xhtml+xml" href="dk-nota-665637-016-chapter.xhtml" />
+        <item id="import_17" media-type="application/xhtml+xml" href="dk-nota-665637-017-chapter.xhtml" />
+        <item id="import_18" media-type="application/xhtml+xml" href="dk-nota-665637-018-chapter.xhtml" />
+        <item id="import_19" media-type="application/xhtml+xml" href="dk-nota-665637-019-chapter.xhtml" />
+        <item id="import_20" media-type="application/xhtml+xml" href="dk-nota-665637-020-chapter.xhtml" />
+        <item id="import_21" media-type="application/xhtml+xml" href="dk-nota-665637-021-chapter.xhtml" />
+        <item id="import_22" media-type="application/xhtml+xml" href="dk-nota-665637-022-chapter.xhtml" />
+        <item id="import_23" media-type="application/xhtml+xml" href="dk-nota-665637-023-chapter.xhtml" />
+        <item id="import_24" media-type="application/xhtml+xml" href="dk-nota-665637-024-chapter.xhtml" />
+        <item id="import_25" media-type="application/xhtml+xml" href="dk-nota-665637-025-part.xhtml" />
+        <item id="import_26" media-type="application/xhtml+xml" href="dk-nota-665637-026-chapter.xhtml" />
+        <item id="import_27" media-type="application/xhtml+xml" href="dk-nota-665637-027-chapter.xhtml" />
+        <item id="import_28" media-type="application/xhtml+xml" href="dk-nota-665637-028-chapter.xhtml" />
+        <item id="import_29" media-type="application/xhtml+xml" href="dk-nota-665637-029-chapter.xhtml" />
+        <item id="import_30" media-type="application/xhtml+xml" href="dk-nota-665637-030-chapter.xhtml" />
+        <item id="import_31" media-type="application/xhtml+xml" href="dk-nota-665637-031-part.xhtml" />
+        <item id="import_32" media-type="application/xhtml+xml" href="dk-nota-665637-032-chapter.xhtml" />
+        <item id="import_33" media-type="application/xhtml+xml" href="dk-nota-665637-033-chapter.xhtml" />
+        <item id="import_34" media-type="application/xhtml+xml" href="dk-nota-665637-034-chapter.xhtml" />
+        <item id="import_35" media-type="application/xhtml+xml" href="dk-nota-665637-035-chapter.xhtml" />
+        <item id="import_36" media-type="application/xhtml+xml" href="dk-nota-665637-036-chapter.xhtml" />
+        <item id="import_37" media-type="application/xhtml+xml" href="dk-nota-665637-037-part.xhtml" />
+        <item id="import_38" media-type="application/xhtml+xml" href="dk-nota-665637-038-chapter.xhtml" />
+        <item id="import_39" media-type="application/xhtml+xml" href="dk-nota-665637-039-chapter.xhtml" />
+        <item id="import_40" media-type="application/xhtml+xml" href="dk-nota-665637-040-chapter.xhtml" />
+        <item id="import_41" media-type="application/xhtml+xml" href="dk-nota-665637-041-chapter.xhtml" />
+        <item id="import_42" media-type="application/xhtml+xml" href="dk-nota-665637-042-chapter.xhtml" />
+        <item id="import_43" media-type="application/xhtml+xml" href="dk-nota-665637-043-chapter.xhtml" />
+        <item id="import_44" media-type="application/xhtml+xml" href="dk-nota-665637-044-part.xhtml" />
+        <item id="import_45" media-type="application/xhtml+xml" href="dk-nota-665637-045-chapter.xhtml" />
+        <item id="import_46" media-type="application/xhtml+xml" href="dk-nota-665637-046-chapter.xhtml" />
+        <item id="import_47" media-type="application/xhtml+xml" href="dk-nota-665637-047-chapter.xhtml" />
+        <item id="import_48" media-type="application/xhtml+xml" href="dk-nota-665637-048-chapter.xhtml" />
+        <item id="import_49" media-type="application/xhtml+xml" href="dk-nota-665637-049-chapter.xhtml" />
+        <item id="import_50" media-type="application/xhtml+xml" href="dk-nota-665637-050-chapter.xhtml" />
+        <item id="import_51" media-type="application/xhtml+xml" href="dk-nota-665637-051-part.xhtml" />
+        <item id="import_52" media-type="application/xhtml+xml" href="dk-nota-665637-052-chapter.xhtml" />
+        <item id="import_53" media-type="application/xhtml+xml" href="dk-nota-665637-053-chapter.xhtml" />
+        <item id="import_54" media-type="application/xhtml+xml" href="dk-nota-665637-054-chapter.xhtml" />
+        <item id="import_55" media-type="application/xhtml+xml" href="dk-nota-665637-055-chapter.xhtml" />
+        <item id="import_56" media-type="application/xhtml+xml" href="dk-nota-665637-056-chapter.xhtml" />
+        <item id="import_57" media-type="application/xhtml+xml" href="dk-nota-665637-057-part.xhtml" />
+        <item id="import_58" media-type="application/xhtml+xml" href="dk-nota-665637-058-chapter.xhtml" />
+        <item id="import_59" media-type="application/xhtml+xml" href="dk-nota-665637-059-chapter.xhtml" />
+        <item id="import_60" media-type="application/xhtml+xml" href="dk-nota-665637-060-chapter.xhtml" />
+        <item id="import_61" media-type="application/xhtml+xml" href="dk-nota-665637-061-part.xhtml" />
+        <item id="import_62" media-type="application/xhtml+xml" href="dk-nota-665637-062-chapter.xhtml" />
+        <item id="import_63" media-type="application/xhtml+xml" href="dk-nota-665637-063-chapter.xhtml" />
+        <item id="import_64" media-type="application/xhtml+xml" href="dk-nota-665637-064-chapter.xhtml" />
+        <item id="import_65" media-type="application/xhtml+xml" href="dk-nota-665637-065-chapter.xhtml" />
+        <item id="import_66" media-type="application/xhtml+xml" href="dk-nota-665637-066-chapter.xhtml" />
+        <item id="import_67" media-type="application/xhtml+xml" href="dk-nota-665637-067-chapter.xhtml" />
+        <item id="import_68" media-type="application/xhtml+xml" href="dk-nota-665637-068-chapter.xhtml" />
+        <item id="import_69" media-type="application/xhtml+xml" href="dk-nota-665637-069-chapter.xhtml" />
+        <item id="import_70" media-type="application/xhtml+xml" href="dk-nota-665637-070-chapter.xhtml" />
+        <item id="import_71" media-type="application/xhtml+xml" href="dk-nota-665637-071-chapter.xhtml" />
+        <item id="import_72" media-type="application/xhtml+xml" href="dk-nota-665637-072-part.xhtml" />
+        <item id="import_73" media-type="application/xhtml+xml" href="dk-nota-665637-073-chapter.xhtml" />
+        <item id="import_74" media-type="application/xhtml+xml" href="dk-nota-665637-074-chapter.xhtml" />
+        <item id="import_75" media-type="application/xhtml+xml" href="dk-nota-665637-075-chapter.xhtml" />
+        <item id="import_76" media-type="application/xhtml+xml" href="dk-nota-665637-076-chapter.xhtml" />
+        <item id="import_77" media-type="application/xhtml+xml" href="dk-nota-665637-077-chapter.xhtml" />
+        <item id="import_78" media-type="application/xhtml+xml" href="dk-nota-665637-078-chapter.xhtml" />
+        <item id="import_79" media-type="application/xhtml+xml" href="dk-nota-665637-079-chapter.xhtml" />
+        <item id="import_80" media-type="application/xhtml+xml" href="dk-nota-665637-080-chapter.xhtml" />
+        <item id="import_81" media-type="application/xhtml+xml" href="dk-nota-665637-081-chapter.xhtml" />
+        <item id="import_82" media-type="application/xhtml+xml" href="dk-nota-665637-082-chapter.xhtml" />
+        <item id="import_83" media-type="application/xhtml+xml" href="dk-nota-665637-083-part.xhtml" />
+        <item id="import_84" media-type="application/xhtml+xml" href="dk-nota-665637-084-chapter.xhtml" />
+        <item id="import_85" media-type="application/xhtml+xml" href="dk-nota-665637-085-chapter.xhtml" />
+        <item id="import_86" media-type="application/xhtml+xml" href="dk-nota-665637-086-chapter.xhtml" />
+        <item id="import_87" media-type="application/xhtml+xml" href="dk-nota-665637-087-chapter.xhtml" />
+        <item id="import_88" media-type="application/xhtml+xml" href="dk-nota-665637-088-chapter.xhtml" />
+        <item id="import_89" media-type="application/xhtml+xml" href="dk-nota-665637-089-part.xhtml" />
+        <item id="import_90" media-type="application/xhtml+xml" href="dk-nota-665637-090-chapter.xhtml" />
+        <item id="import_91" media-type="application/xhtml+xml" href="dk-nota-665637-091-chapter.xhtml" />
+        <item id="import_92" media-type="application/xhtml+xml" href="dk-nota-665637-092-chapter.xhtml" />
+        <item id="import_93" media-type="application/xhtml+xml" href="dk-nota-665637-093-chapter.xhtml" />
+        <item id="import_94" media-type="application/xhtml+xml" href="dk-nota-665637-094-chapter.xhtml" />
+        <item id="import_95" media-type="application/xhtml+xml" href="dk-nota-665637-095-part.xhtml" />
+        <item id="import_96" media-type="application/xhtml+xml" href="dk-nota-665637-096-chapter.xhtml" />
+        <item id="import_97" media-type="application/xhtml+xml" href="dk-nota-665637-097-chapter.xhtml" />
+        <item id="import_98" media-type="application/xhtml+xml" href="dk-nota-665637-098-chapter.xhtml" />
+        <item id="import_99" media-type="application/xhtml+xml" href="dk-nota-665637-099-chapter.xhtml" />
+        <item id="import_100" media-type="application/xhtml+xml" href="dk-nota-665637-100-part.xhtml" />
+        <item id="import_101" media-type="application/xhtml+xml" href="dk-nota-665637-101-chapter.xhtml" />
+        <item id="import_102" media-type="application/xhtml+xml" href="dk-nota-665637-102-chapter.xhtml" />
+        <item id="import_103" media-type="application/xhtml+xml" href="dk-nota-665637-103-chapter.xhtml" />
+        <item id="import_104" media-type="application/xhtml+xml" href="dk-nota-665637-104-chapter.xhtml" />
+        <item id="import_105" media-type="application/xhtml+xml" href="dk-nota-665637-105-chapter.xhtml" />
+        <item id="import_106" media-type="application/xhtml+xml" href="dk-nota-665637-106-chapter.xhtml" />
+        <item id="import_107" media-type="application/xhtml+xml" href="dk-nota-665637-107-part.xhtml" />
+        <item id="import_108" media-type="application/xhtml+xml" href="dk-nota-665637-108-chapter.xhtml" />
+        <item id="import_109" media-type="application/xhtml+xml" href="dk-nota-665637-109-chapter.xhtml" />
+        <item id="import_110" media-type="application/xhtml+xml" href="dk-nota-665637-110-chapter.xhtml" />
+        <item id="import_111" media-type="application/xhtml+xml" href="dk-nota-665637-111-chapter.xhtml" />
+        <item id="import_112" media-type="application/xhtml+xml" href="dk-nota-665637-112-chapter.xhtml" />
+        <item id="import_113" media-type="application/xhtml+xml" href="dk-nota-665637-113-chapter.xhtml" />
+        <item id="import_114" media-type="application/xhtml+xml" href="dk-nota-665637-114-part.xhtml" />
+        <item id="import_115" media-type="application/xhtml+xml" href="dk-nota-665637-115-chapter.xhtml" />
+        <item id="import_116" media-type="application/xhtml+xml" href="dk-nota-665637-116-chapter.xhtml" />
+        <item id="import_117" media-type="application/xhtml+xml" href="dk-nota-665637-117-chapter.xhtml" />
+        <item id="import_118" media-type="application/xhtml+xml" href="dk-nota-665637-118-part.xhtml" />
+        <item id="import_119" media-type="application/xhtml+xml" href="dk-nota-665637-119-chapter.xhtml" />
+        <item id="import_120" media-type="application/xhtml+xml" href="dk-nota-665637-120-chapter.xhtml" />
+        <item id="import_121" media-type="application/xhtml+xml" href="dk-nota-665637-121-chapter.xhtml" />
+        <item id="import_122" media-type="application/xhtml+xml" href="dk-nota-665637-122-chapter.xhtml" />
+        <item id="import_123" media-type="application/xhtml+xml" href="dk-nota-665637-123-chapter.xhtml" />
+        <item id="import_124" media-type="application/xhtml+xml" href="dk-nota-665637-124-chapter.xhtml" />
+        <item id="import_125" media-type="application/xhtml+xml" href="dk-nota-665637-125-part.xhtml" />
+        <item id="import_126" media-type="application/xhtml+xml" href="dk-nota-665637-126-chapter.xhtml" />
+        <item id="import_127" media-type="application/xhtml+xml" href="dk-nota-665637-127-chapter.xhtml" />
+        <item id="import_128" media-type="application/xhtml+xml" href="dk-nota-665637-128-chapter.xhtml" />
+        <item id="import_129" media-type="application/xhtml+xml" href="dk-nota-665637-129-chapter.xhtml" />
+        <item id="import_130" media-type="application/xhtml+xml" href="dk-nota-665637-130-part.xhtml" />
+        <item id="import_131" media-type="application/xhtml+xml" href="dk-nota-665637-131-chapter.xhtml" />
+        <item id="import_132" media-type="application/xhtml+xml" href="dk-nota-665637-132-chapter.xhtml" />
+        <item id="import_133" media-type="application/xhtml+xml" href="dk-nota-665637-133-chapter.xhtml" />
+        <item id="import_134" media-type="application/xhtml+xml" href="dk-nota-665637-134-chapter.xhtml" />
+        <item id="import_135" media-type="application/xhtml+xml" href="dk-nota-665637-135-chapter.xhtml" />
+        <item id="import_136" media-type="application/xhtml+xml" href="dk-nota-665637-136-chapter.xhtml" />
+        <item id="import_137" media-type="application/xhtml+xml" href="dk-nota-665637-137-part.xhtml" />
+        <item id="import_138" media-type="application/xhtml+xml" href="dk-nota-665637-138-chapter.xhtml" />
+        <item id="import_139" media-type="application/xhtml+xml" href="dk-nota-665637-139-chapter.xhtml" />
+        <item id="import_140" media-type="application/xhtml+xml" href="dk-nota-665637-140-chapter.xhtml" />
+        <item id="import_141" media-type="application/xhtml+xml" href="dk-nota-665637-141-chapter.xhtml" />
+        <item id="import_142" media-type="application/xhtml+xml" href="dk-nota-665637-142-backmatter.xhtml" />
+        <item id="import_143" media-type="application/xhtml+xml" href="dk-nota-665637-143-index.xhtml" />
+    <item id="css-nota-output" media-type="text/css" href="css/nota-css-out.css" /></manifest>
+    <spine>
+        <itemref idref="import_1" linear="no" />
+        <itemref idref="import_2" />
+        <itemref idref="import_3" />
+        <itemref idref="import_4" />
+        <itemref idref="import_5" />
+        <itemref idref="import_6" />
+        <itemref idref="import_7" />
+        <itemref idref="import_8" />
+        <itemref idref="import_9" />
+        <itemref idref="import_10" />
+        <itemref idref="import_11" />
+        <itemref idref="import_12" />
+        <itemref idref="import_13" />
+        <itemref idref="import_14" />
+        <itemref idref="import_15" />
+        <itemref idref="import_16" />
+        <itemref idref="import_17" />
+        <itemref idref="import_18" />
+        <itemref idref="import_19" />
+        <itemref idref="import_20" />
+        <itemref idref="import_21" />
+        <itemref idref="import_22" />
+        <itemref idref="import_23" />
+        <itemref idref="import_24" />
+        <itemref idref="import_25" />
+        <itemref idref="import_26" />
+        <itemref idref="import_27" />
+        <itemref idref="import_28" />
+        <itemref idref="import_29" />
+        <itemref idref="import_30" />
+        <itemref idref="import_31" />
+        <itemref idref="import_32" />
+        <itemref idref="import_33" />
+        <itemref idref="import_34" />
+        <itemref idref="import_35" />
+        <itemref idref="import_36" />
+        <itemref idref="import_37" />
+        <itemref idref="import_38" />
+        <itemref idref="import_39" />
+        <itemref idref="import_40" />
+        <itemref idref="import_41" />
+        <itemref idref="import_42" />
+        <itemref idref="import_43" />
+        <itemref idref="import_44" />
+        <itemref idref="import_45" />
+        <itemref idref="import_46" />
+        <itemref idref="import_47" />
+        <itemref idref="import_48" />
+        <itemref idref="import_49" />
+        <itemref idref="import_50" />
+        <itemref idref="import_51" />
+        <itemref idref="import_52" />
+        <itemref idref="import_53" />
+        <itemref idref="import_54" />
+        <itemref idref="import_55" />
+        <itemref idref="import_56" />
+        <itemref idref="import_57" />
+        <itemref idref="import_58" />
+        <itemref idref="import_59" />
+        <itemref idref="import_60" />
+        <itemref idref="import_61" />
+        <itemref idref="import_62" />
+        <itemref idref="import_63" />
+        <itemref idref="import_64" />
+        <itemref idref="import_65" />
+        <itemref idref="import_66" />
+        <itemref idref="import_67" />
+        <itemref idref="import_68" />
+        <itemref idref="import_69" />
+        <itemref idref="import_70" />
+        <itemref idref="import_71" />
+        <itemref idref="import_72" />
+        <itemref idref="import_73" />
+        <itemref idref="import_74" />
+        <itemref idref="import_75" />
+        <itemref idref="import_76" />
+        <itemref idref="import_77" />
+        <itemref idref="import_78" />
+        <itemref idref="import_79" />
+        <itemref idref="import_80" />
+        <itemref idref="import_81" />
+        <itemref idref="import_82" />
+        <itemref idref="import_83" />
+        <itemref idref="import_84" />
+        <itemref idref="import_85" />
+        <itemref idref="import_86" />
+        <itemref idref="import_87" />
+        <itemref idref="import_88" />
+        <itemref idref="import_89" />
+        <itemref idref="import_90" />
+        <itemref idref="import_91" />
+        <itemref idref="import_92" />
+        <itemref idref="import_93" />
+        <itemref idref="import_94" />
+        <itemref idref="import_95" />
+        <itemref idref="import_96" />
+        <itemref idref="import_97" />
+        <itemref idref="import_98" />
+        <itemref idref="import_99" />
+        <itemref idref="import_100" />
+        <itemref idref="import_101" />
+        <itemref idref="import_102" />
+        <itemref idref="import_103" />
+        <itemref idref="import_104" />
+        <itemref idref="import_105" />
+        <itemref idref="import_106" />
+        <itemref idref="import_107" />
+        <itemref idref="import_108" />
+        <itemref idref="import_109" />
+        <itemref idref="import_110" />
+        <itemref idref="import_111" />
+        <itemref idref="import_112" />
+        <itemref idref="import_113" />
+        <itemref idref="import_114" />
+        <itemref idref="import_115" />
+        <itemref idref="import_116" />
+        <itemref idref="import_117" />
+        <itemref idref="import_118" />
+        <itemref idref="import_119" />
+        <itemref idref="import_120" />
+        <itemref idref="import_121" />
+        <itemref idref="import_122" />
+        <itemref idref="import_123" />
+        <itemref idref="import_124" />
+        <itemref idref="import_125" />
+        <itemref idref="import_126" />
+        <itemref idref="import_127" />
+        <itemref idref="import_128" />
+        <itemref idref="import_129" />
+        <itemref idref="import_130" />
+        <itemref idref="import_131" />
+        <itemref idref="import_132" />
+        <itemref idref="import_133" />
+        <itemref idref="import_134" />
+        <itemref idref="import_135" />
+        <itemref idref="import_136" />
+        <itemref idref="import_137" />
+        <itemref idref="import_138" />
+        <itemref idref="import_139" />
+        <itemref idref="import_140" />
+        <itemref idref="import_141" />
+        <itemref idref="import_142" />
+        <itemref idref="import_143" />
+    </spine>
+</package>

@@ -1,0 +1,15 @@
+.page-normal::after,
+.page-front::after,
+.page-special::after {
+    background-color: silver;
+    content: attr(title)attr(aria-label);
+    padding-left: 3px;
+    padding-right: 3px;    
+}
+
+span.page-normal::after,
+span.page-front::after,
+span.page-special::after {
+    margin-left: 3px;
+    margin-right: 3px;
+}
