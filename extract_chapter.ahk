@@ -23,9 +23,9 @@ Loop {
         Send("^v")  ; Paste from clipboard
         Sleep(100)
         Send("{Enter}")
-        Sleep(1000)
+        Sleep(2000)
         Send("{Enter}")  ; Press Enter to save
-        Sleep(1000)
+        Sleep(2000)
         Send("{Left}")   ; Press Left arrow
         Sleep(100)
         Send("{Enter}")  ; Press Enter again
