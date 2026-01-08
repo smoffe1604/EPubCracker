@@ -1,49 +1,11 @@
-<html>
-<head xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:nordic="http://www.mtm.se/epub/" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#" lang="da" xml:lang="da" style="--USER__advancedSettings: readium-advanced-on; --USER__invertFilter: readium-invert-off; --USER__appearance: readium-default-on; --USER__view: readium-paged-on; --USER__fontOverride: readium-font-off; --USER__a11yNormalize: readium-a11y-off; --USER__bodyHyphens: auto; --USER__colCount: auto; --USER__pageMargins: 1" class="r2-css-paginated r2-zeroTransform">
+    <head>
 <!-- https://github.com/edrlab/thorium-reader/issues/1897 -->
-<script type="text/javascript">
-window._thorium_websql_void_openDatabase = window.openDatabase;
-window.openDatabase = undefined;
-</script>
 
-<script type="text/javascript">
 
-const ers = {};
-ers.name = "Thorium";
-ers.version = "3.1.0";
 
-ers.hasFeature = (feature, version) =&gt; {
-    switch (feature) {
-        case "dom-manipulation": {
-            return true;
-        }
-        case "layout-changes": {
-            return true;
-        }
-        case "touch-events": {
-            return true;
-        }
-        case "mouse-events": {
-            return true;
-        }
-        case "keyboard-events": {
-            return true;
-        }
-        case "spine-scripting": {
-            return true;
-        }
-        default: return false;
-    }
-};
-
-if (!window.navigator.epubReadingSystem
-    || window.navigator.epubReadingSystem.name != "Thorium"
-    || window.navigator.epubReadingSystem.version != "3.1.0"
-    ) {
-    window.navigator.epubReadingSystem = ers;
-}
-
-</script>
 
         <link id="ReadiumCSS-before" rel="stylesheet" type="text/css" href="thoriumhttps://0.0.0.0/readium-css/ReadiumCSS-before.css" /><style id="ReadiumCSS-before-PATCH" type="text/css">
 audio[controls] {
@@ -796,12 +758,7 @@ https://github.com/edrlab/thorium-reader/issues/2478#issuecomment-2304782942
 */
 </style><style id="Readium2-electron-selection" type="text/css">
 
-:root[style].r2-hideCursor,
-:root.r2-hideCursor,
-:root[style].r2-hideCursor *,
-:root.r2-hideCursor * {
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=), none !important;
-}
+:root[style]
 
 .r2-zeroTransform {
     will-change: scroll-position;
@@ -1845,60 +1802,21 @@ mix-blend-mode: normal !important;
 }
     </style>
     
-    <script type="text/javascript">
-    // document.addEventListener("DOMContentLoaded", () =&gt; {
-    // });
-    window.addEventListener("load", () =&gt; {
-        setTimeout(() =&gt; {
-            document.addEventListener("dragstart", (e) =&gt; {
-                // console.log("dragstart capture currentTarget", typeof e.currentTarget, e.currentTarget);
-                // console.log("dragstart capture target", typeof e.target, e.target, e.target.tagName?.toLowerCase());
-
-                const sel = document.getSelection();
-                if (sel &amp;&amp; !sel.isCollapsed) {
-                    // console.log("dragstart capture document selection preventDefault");
-                    // e.preventDefault();
-                    e.dataTransfer.clearData();
-                    e.dataTransfer.setData("text/plain", " ");
-                } else if (e.target.tagName) {
-                    const n = e.target.tagName.toLowerCase();
-                    if (n === "a") {
-                        // console.log("dragstart capture target preventDefault ", n);
-                        // e.preventDefault();
-                        e.dataTransfer.clearData();
-                        e.dataTransfer.setData("text/plain", "https://www.edrlab.org/software/thorium-reader/");
-                    } else if (n === "img" || n === "video" || n === "svg") {
-                        // console.log("dragstart capture target preventDefault ", n);
-                        // e.preventDefault();
-                        e.dataTransfer.clearData();
-                        e.dataTransfer.setData("text/plain", " ");
-                    }
-                }
-            }, true);
-
-            /*
-            document.addEventListener("dragend", (e) =&gt; {
-                console.log("dragend capture currentTarget", typeof e.currentTarget, e.currentTarget);
-                console.log("dragend capture target", typeof e.target, e.target);
-            }, true);
-
-            document.addEventListener("dragstart", (e) =&gt; {
-                console.log("dragstart not-capture currentTarget", typeof e.currentTarget, e.currentTarget);
-                console.log("dragstart not-capture target", typeof e.target, e.target);
-            }, false);
-
-            document.addEventListener("dragend", (e) =&gt; {
-                console.log("dragend not-capture currentTarget", typeof e.currentTarget, e.currentTarget);
-                console.log("dragend not-capture target", typeof e.target, e.target);
-            }, false);
-             */
-        }, 100);
-    });
-    </script>
-    </head>
-    <body xmlns="http://www.w3.org/1999/xhtml" id="d1055e16" tabindex="-1" class="r2-no-focus-outline">
-        <section aria-labelledby="h2_12" xmlns:epub="http://www.idpf.org/2007/ops" epub:type="bodymatter chapter" id="level2_12" role="doc-chapter">
-            <h2 id="h2_12" style="" class="r2-no-focus-outline" tabindex="-1">5. Selskaber og selskabsbeskattede foreninger m.v.</h2>
+    
+    <style>
+        :root {
+            --RS__backgroundColor: white !important;
+            --RS__textColor: black !important;
+            --USER__backgroundColor: white !important;
+            --USER__textColor: black !important;
+        }
+        body { background-color: white !important; color: black !important; }
+        *, *::before, *::after { cursor: auto !important; }
+        html, body { cursor: default !important; }
+    </style></head>
+    <body id="d1055e16" tabindex="-1" class="r2-no-focus-outline">
+        <section aria-labelledby="h2_12" epub:type="bodymatter chapter" id="level2_12" role="doc-chapter">
+            <h2 id="h2_12" style="" class="r2-link-target r2-link-target-alt r2-no-focus-outline" tabindex="-1">5. Selskaber og selskabsbeskattede foreninger m.v.</h2>
             <p>Selskaber, selskabsbeskattede foreninger og en række andre sammenslutninger kan – ligesom fysiske personer – være fuldt skattepligtige til Danmark. For selskaber m.v. er det imidlertid ikke tilstrækkeligt at afgøre, om de er fuldt skattepligtige, begrænset skattepligtige eller overhovedet ikke skattepligtige til Danmark (nedenfor 5.2.). Det må også afgøres, om sammenslutningen overhovedet har en sådan karakter, at den kan være selvstændigt skattesubjekt (nedenfor 5.1.).<a href="dk-nota-665637-024-chapter.xhtml#c01109" epub:type="noteref" id="c01109_1" role="doc-noteref">36</a> Begge spørgsmål reguleres i SEL § 1, der udtømmende opregner de selskaber, foreninger og andre sammenslutninger, der er selvstændige skattesubjekter, og som er fuldt skattepligtige her til landet.</p>
             <p>Den fulde skattepligt for selskaber og foreninger m.v. omfatter den juridiske persons aktiviteter. Beskatningen af ejerne skal ikke afgøres på baggrund af reglerne i selskabsskatteloven, men derimod efter reglerne for beskatning af udbytte, <span aria-label="90" class="page-normal" epub:type="pagebreak" id="page-90" role="doc-pagebreak"></span>der udbetales af selskabet m.v.,<a href="dk-nota-665637-024-chapter.xhtml#c01110" epub:type="noteref" id="c01110_1" role="doc-noteref">37</a> og reglerne om beskatning af eventuelle avancer ved afståelse af aktier eller anparter m.v. i selskabet.<a href="dk-nota-665637-024-chapter.xhtml#c01111" epub:type="noteref" id="c01111_1" role="doc-noteref">38</a></p>
             <section id="level3_25">
@@ -1940,5 +1858,5 @@ mix-blend-mode: normal !important;
                 <p>Det er uden betydning, hvor generalforsamlinger finder sted. Det følger heraf, at det heller ikke kan tillægges betydning, hvor den person eller det selskab, der ejer aktierne eller anparterne i selskabet m.v., har hjemsted eller er hjemmehørende.</p>
             </section>
         </section>
-    </body>
+    <div id="r2-extra-column-pad" style="break-before: column;">​</div></body>
 </html>

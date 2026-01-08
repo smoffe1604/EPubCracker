@@ -12,62 +12,101 @@ https://github.com/Alex313031/thorium/releases
 # GET the xhtml text and download it.
 ```javascript
 
-fetch(window.location.href)
-  .then(response => response.text())
-  .then(html => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const bodyElement = doc.querySelector('body');
 
-    if (!bodyElement) {
-      console.log('No`<body>` tag found in the source.');
-      return;
-    }
-
-    const bodyHTML = bodyElement.outerHTML;
-
-    const fullHTML = ``<!DOCTYPE html>`
-
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="da" xml:lang="da">
-<head>
-    <meta charset="utf-8" />
-</head>
-
-${bodyHTML}
-</html>`;
-
-    // Create a Blob for the file content
-    const blob = new Blob([fullHTML], { type: 'text/html' });
-
-    // Use File System Access API to trigger a real Save As dialog
-    if ('showSaveFilePicker' in window) {
-      window.showSaveFilePicker({
-        suggestedName: 'content.xhtml',  // You can change the default filename here
-        types: [{
-          description: 'XHTML File',
-          accept: { 'application/xhtml+xml': ['.xhtml', '.html'] },
-        }],
-      })
-      .then(handle => handle.createWritable())
-      .then(writable => writable.write(blob).then(() => writable.close()))
-      .then(() => {
-        console.log('✅ File saved successfully via Save As dialog!');
-      })
-      .catch(err => {
-        if (err.name !== 'AbortError') {  // User didn't cancel
-          console.error('Save failed:', err);
-        } else {
-          console.log('Save cancelled by user.');
+(async () => {
+    // === 1. Extract filename ===
+    let filename = 'chapter.xhtml';
+    try {
+        const pathname = window.location.pathname;
+        const lastSlashIndex = pathname.lastIndexOf('/');
+        if (lastSlashIndex !== -1) {
+            const potentialName = pathname.slice(lastSlashIndex + 1);
+            const cleanName = potentialName.split('?')[0];
+            if (cleanName && cleanName.endsWith('.xhtml')) filename = cleanName;
         }
-      });
+    } catch (e) {}
+    console.log(`📄 Saving as: ${filename}`);
+
+    // === 2. Clone document ===
+    const clonedDoc = document.cloneNode(true);
+
+    // === 3. Thorough entity decoding in scripts and styles ===
+    const aggressiveDecode = text => text
+        .replace(/&gt;/g, '>')
+        .replace(/&lt;/g, '<')
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'");
+
+    clonedDoc.querySelectorAll('script, style').forEach(el => {
+        if (el.textContent) {
+            el.textContent = aggressiveDecode(el.textContent);
+        }
+    });
+
+    // === 4. Remove Thorium scripts ===
+    clonedDoc.querySelectorAll('script').forEach(script => {
+        const txt = script.textContent || '';
+        if (txt.includes('_thorium_websql_void_openDatabase') ||
+            txt.includes('ers.name = "Thorium"') ||
+            txt.includes('dragstart capture')) {
+            script.remove();
+        }
+    });
+
+    // === 5. Remove cursor-hiding class and rules ===
+    clonedDoc.documentElement.classList.remove('r2-hideCursor');
+    clonedDoc.querySelectorAll('style').forEach(style => {
+        if (style.textContent && style.textContent.includes('r2-hideCursor')) {
+            style.textContent = style.textContent.replace(/\.r2-hideCursor[^}]*\}|\.r2-hideCursor\s*,[\s\S]*?\{[^}]*\}/g, '');
+        }
+    });
+
+    // Clean reader attributes
+    clonedDoc.documentElement.removeAttribute('data-readiumcss-injected');
+    clonedDoc.documentElement.removeAttribute('data-readiumcss');
+
+    // === 6. Force readable colors + visible cursor ===
+    const forceStyle = clonedDoc.createElement('style');
+    forceStyle.textContent = `
+        :root {
+            --RS__backgroundColor: white !important;
+            --RS__textColor: black !important;
+            --USER__backgroundColor: white !important;
+            --USER__textColor: black !important;
+        }
+        body { background-color: white !important; color: black !important; }
+        *, *::before, *::after { cursor: auto !important; }
+        html, body { cursor: default !important; }
+    `;
+    clonedDoc.head.appendChild(forceStyle);
+
+    // === 7. Serialize and save ===
+    const xhtml = `<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+${clonedDoc.documentElement.outerHTML}`;
+
+    const blob = new Blob([xhtml], { type: 'application/xhtml+xml' });
+
+    if ('showSaveFilePicker' in window) {
+        try {
+            const handle = await window.showSaveFilePicker({
+                suggestedName: filename,
+                types: [{ description: 'EPUB Chapter (XHTML)', accept: { 'application/xhtml+xml': ['.xhtml'] } }],
+            });
+            const writable = await handle.createWritable();
+            await writable.write(blob);
+            await writable.close();
+            console.log(`✅ "${filename}" saved – clean CSS (no &gt; anywhere), visible cursor, perfect rendering!`);
+        } catch (err) {
+            if (err.name !== 'AbortError') console.error(err);
+        }
     } else {
-      // Fallback message if browser doesn't support the API (unlikely on modern Chrome/Edge)
-      console.log('Your browser doesn\'t support direct Save As. Falling back to copy-to-clipboard.');
-      navigator.clipboard.writeText(fullHTML).then(() => {
-        console.log('Copied to clipboard instead! Paste into a new file.');
-      });
+        await navigator.clipboard.writeText(xhtml);
+        console.log(`📋 Copied clean version – paste into "${filename}"`);
     }
-  })
-  .catch(err => console.error('Error:', err));
+})();
+
+
 ```
   
