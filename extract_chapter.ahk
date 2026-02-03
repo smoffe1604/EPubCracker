@@ -16,7 +16,7 @@ moveRight := true
 Loop {
     if (moveRight) {
         ; Move right
-        MouseMove(300, 0, 0, "R")
+        MouseMove(500, 0, 0, "R")
         Sleep(100)
         Click
         Sleep(100)
@@ -24,15 +24,24 @@ Loop {
         Sleep(100)
         Send("{Enter}")
         Sleep(2000)
+        ; Move mouse up to click something
+        MouseMove(0, 600, 0, "R")
+        Sleep(300)
+        Click  ; Press mouse down
+        Sleep(300)
+        ; Continue with save sequence
         Send("{Enter}")  ; Press Enter to save
         Sleep(2000)
         Send("{Left}")   ; Press Left arrow
         Sleep(100)
         Send("{Enter}")  ; Press Enter again
         Sleep(1000)
+        ; Reset mouse position before moving left
+        MouseMove(0, -600, 0, "R")
+        Sleep(100)
     } else {
         ; Move left
-        MouseMove(-300, 0, 0, "R")
+        MouseMove(-500, 0, 0, "R")
         Sleep(100)
         Click
         Sleep(100)
