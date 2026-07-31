@@ -7,12 +7,10 @@ https://github.com/Alex313031/thorium/releases
 # download zip
 "C:\Program Files\7-Zip\7z.exe" a -mx0 mybook.epub mimetype
 
-"C:\Program Files\7-Zip\7z.exe" a -mx9 mybook.epub * -x!mimetype -x!mybook.epub
+"C:\Program Files\7-Zip\7z.exe" a -mx0 mybook.epub mimetype
 
 # GET the xhtml text and download it.
 ```javascript
-
-
 (async () => {
     // === 1. Extract filename ===
     let filename = 'chapter.xhtml';
@@ -106,7 +104,67 @@ ${clonedDoc.documentElement.outerHTML}`;
         console.log(`📋 Copied clean version – paste into "${filename}"`);
     }
 })();
+```
 
+
+
+# GET the images text and download it.
+```javascript
+  
+if ('showDirectoryPicker' in window) {
+    try {
+        // Pick directory ONCE
+        if (!window.__EPUB_IMG_DIR__) {
+            window.__EPUB_IMG_DIR__ = await window.showDirectoryPicker({
+                id: 'epub-images',
+                mode: 'readwrite'
+            });
+            console.log("📂 Image directory selected");
+        }
+
+        const imgDir = window.__EPUB_IMG_DIR__;
+
+        const imgs = Array.from(document.querySelectorAll('img'));
+        console.log(`🖼️ Found ${imgs.length} images in chapter`);
+
+        for (const img of imgs) {
+            const src = img.getAttribute('src');
+            if (!src) continue;
+
+            let url;
+            try {
+                url = new URL(src, location.href).href;
+            } catch {
+                continue;
+            }
+
+            const filename = decodeURIComponent(url.split('/').pop());
+            console.log(`⬇️ Saving image: ${filename}`);
+
+            const res = await fetch(url);
+            if (!res.ok) continue;
+
+            const blob = await res.blob();
+
+            const fileHandle = await imgDir.getFileHandle(filename, { create: true });
+            const writable = await fileHandle.createWritable();
+            await writable.write(blob);
+            await writable.close();
+        }
+    } catch (e) {
+        if (e.name !== 'AbortError') console.error(e);
+    }
+}
 
 ```
-  
+
+
+
+
+
+
+
+
+
+
+
